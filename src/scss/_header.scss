@@ -1,0 +1,21 @@
+.header {
+    background-color: $grayscale01;
+    &__content {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header {
+    @media (max-width: 800px) {
+        &__content {
+            padding: 15px 16px 16px;
+        }
+        
+    }
+}

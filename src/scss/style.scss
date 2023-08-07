@@ -1,0 +1,75 @@
+$maxWidthContainer: 1320;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//colors
+$grayscale00: #000000;
+$grayscale01: #181818;
+$grayscale02: #444444;
+$grayscale03: #B9B9B9;
+$grayscale04: #CFCFCF;
+$grayscale05: #E4E4E4;
+$grayscale06: #F5F5F5;
+$grayscale07: #FFFFFF;
+
+$primary00: #7B31D4;
+$primary01: #954CED;
+$primary02: #A64CED;
+$primary03: #BA8BF3;
+$primary04: #954CED33;
+
+$secondary01 : #2FDBBC;
+$secondary02 : #FFAA4C;
+$secondary03 : #C1DB2F;
+
+$additional01: #FF6C2D;
+$additional02: #EC1211;
+
+//components
+@import "../style/fonts/_fonts";
+@import "_header";
+@import "_reset";
+@import "_ui";
+@import "_hero";
+@import "_about";
+@import "_works";
+@import "_info";
+@import "_budss";
+@import "_grow";
+@import "_brend";
+@import "_logos";
+@import "_footer";
+@import "_modal-cook";
+
+@import "_slider";
+
+//main
+.container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: ($md1 + px)) {
+        max-width: 970px;
+    }
+    @media (max-width: ($md2 + px)) {
+        max-width: 750px;
+    }
+    @media (max-width: ($md3 + px)) {
+        max-width: none;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: $grayscale07;
+    background-color: $grayscale01;
+}

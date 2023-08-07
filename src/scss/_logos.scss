@@ -1,0 +1,127 @@
+.logos {
+    background-color: $grayscale07;
+    &__content {
+        padding: 100px 60px;
+    }
+    &__list {
+        display: flex;
+        li {
+            margin-right: 90px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.logos {
+    @media (max-width: 1339px) {
+        &__list {
+            flex-wrap: wrap;
+
+            li {
+                &:last-child {
+                    margin-top: 30px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1183px) {
+        &__list {
+            li {
+                &:nth-child(4){
+                    margin-top: 30px;
+                    margin-right: 90px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 905px) {
+        &__list {
+            li {
+                &:nth-child(3){
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 758px) {
+        &__list {
+            li {
+                margin-right: 40px;
+                &:nth-child(4){
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 660px) {
+        &__content {
+            padding: 50px 20px 90px 20px;
+        }
+        &__list {
+            li {
+                &:nth-child(4){
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 538px) {
+        &__list {
+            li {
+                &:first-child {
+                    width: 91px;
+                }
+                &:nth-child(2) {
+                    width: 149px;
+                    margin-right: 50px;
+                }
+                &:nth-child(3) {
+                    width: 131px;
+                }
+                &:nth-child(4) {
+                    width: 196px;
+                    margin-right: 50px;
+                }
+                &:nth-child(5) {
+                    width: 128px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 456px) {
+        &__list {
+            li {
+                &:nth-child(2) {
+                    margin-right: 0px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 406px) {
+        &__list {
+            li {
+                &:nth-child(3) {
+                    width: 95px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

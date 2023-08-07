@@ -1,0 +1,105 @@
+.hero {
+    background-color: $grayscale01;
+    position: relative;
+    &__content {
+        padding-top: 82px;
+        padding-bottom: 140px;
+    }
+    &__column {
+        width: 671px;
+        padding-left: 50px;
+    }
+    &__heading {
+        color: $grayscale07;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: $grayscale07;
+        margin-bottom: 40px;
+    }
+    &__vector {
+        position: absolute;
+        object-fit: cover;
+        bottom: 0;
+        right: 0;
+    }
+    &__img {
+        position: absolute;
+        object-fit: cover;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.hero {
+    @media (max-width: 1350px) {
+        &__img, &__vector {
+            width:400px;
+        }
+        &__heading {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 106%;
+        }
+        &__column {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: 990px) {
+        &__img, &__vector {
+            width:300px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        &__heading {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 106%;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: auto;
+        }
+        &__column {
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 660px) {
+        &__content {
+            padding-top: 51px;
+            padding-bottom: 124px;
+        }
+        &__text {
+            width: 343px;
+        }
+        &__column {
+            padding-left: 16px;
+        }
+        &__img, &__vector {
+            position: relative;
+            display: flex;
+            
+        }
+        &__img {
+            z-index: 200;
+        }
+        &__vector {
+            z-index: 1;
+            position: absolute;
+        }
+        &__bg {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .button {
+            width: 343px;
+        }
+    }
+}
